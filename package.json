@@ -1,0 +1,49 @@
+{
+  "name": "@s3xysteak/utils",
+  "type": "module",
+  "version": "0.1.5",
+  "private": false,
+  "description": "s3xysteak/utils",
+  "author": "s3xysteak",
+  "license": "MIT",
+  "homepage": "https://github.com/s3xysteak/utils",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s3xysteak/utils.git"
+  },
+  "bugs": "https://github.com/s3xysteak/utils/issues",
+  "keywords": [
+    "type",
+    "utils"
+  ],
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsc && pnpm build-only",
+    "build-only": "unbuild",
+    "test": "vitest",
+    "test-once": "vitest run",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.8.3",
+    "@types/node": "^20.11.28",
+    "eslint": "^8.57.0",
+    "esno": "^4.7.0",
+    "typescript": "^5.4.2",
+    "unbuild": "^2.0.0"
+  }
+}
